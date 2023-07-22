@@ -32,8 +32,8 @@ export default function DateGroup({ date, habit, habits, setHabits }) {
                 value={correspondingStatus}
                 onChange={handleStatusChange}
             >
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+                <option value="Done">Done</option>
+                <option value="Not Done">Not Done</option>
                 <option value="None">None</option>
             </select>
         </>

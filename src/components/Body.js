@@ -8,12 +8,18 @@ export default function Body() {
     return (
         <>
             <AddHabitForm habits={habits} setHabits={setHabits} />
-            {
-                habits.map((habit, index) => <Habit key={index}
-                    habit={habit}
-                    habits={habits}
-                    setHabits={setHabits} />)
-            }
+
+            <div className='card-container'>
+                {
+                    habits.map((habit, index) => <Habit key={index}
+                        habit={habit}
+                        habits={habits}
+                        setHabits={setHabits} />)
+                }
+                <br />
+                <br />
+            </div>
+
         </>
     )
 }
